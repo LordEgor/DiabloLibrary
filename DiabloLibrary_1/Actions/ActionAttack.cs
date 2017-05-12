@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiabloLibrary_1.Skills
+namespace DiabloLibrary_1.Actions
 {
-    class SkillAttack : Skill
+    class ActionAttack : ActionBase
     {
         public override void Action()
         {

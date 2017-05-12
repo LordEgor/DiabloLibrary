@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DiabloLibrary_1.Interfaces;
-using DiabloLibrary_1.Skills;
+using DiabloLibrary_1.Actions;
 
 namespace DiabloLibrary_1.LiveObjects
 {
     public class Hero : LiveObject, IAttackable, ITalk, ITrade
     {
-        Skill RightMouseSkill;
-        Skill LeftMouseSkill;
+        ActionBase RightMouseSkill;
+        ActionBase LeftMouseSkill;
 
         void RightMouseClick()
         {

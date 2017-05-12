@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiabloLibrary_1.Skills
+namespace DiabloLibrary_1.Actions
 {
-    public abstract class Skill
+    class ActionSkill : ActionBase
     {
-        string Name;
-        public abstract void Action();
+        //классовые скилы
     }
 }

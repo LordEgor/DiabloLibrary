@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DiabloLibrary_1.Interfaces;
 using DiabloLibrary_1;
+using DiabloLibrary_1.Actions;
 
 namespace DiabloLibrary_1.LiveObjects
 {
@@ -14,9 +15,16 @@ namespace DiabloLibrary_1.LiveObjects
         public int MaxHealth;
         Position Position;
 
-        public void MoveTo(Position NewPos)
+
+
+        public int Speed { get; set; }
+
+        public ActionMove Move { get; set; }
+
+        public LiveObject()
         {
-            this.Position = NewPos;
+            Move = ActionMove.GetInstance();
+            //Move = null;
         }
     }
 }
